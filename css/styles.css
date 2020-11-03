@@ -13,7 +13,10 @@
 
   html {
     box-sizing: border-box;
-  }*,
+  }
+  
+  
+  *,
   *::before,
   *::after {
     box-sizing: inherit;
@@ -323,9 +326,11 @@ address {
 }
 
 .hero-content {
+    display: inline-block;
     width: 696px;
-
-
+    margin-left: 452px;
+    margin-right: 452px;
+    margin-top: 200px;
 }
 
 .nav {margin-bottom: 9px;}
@@ -415,5 +420,20 @@ address {
     background-color: var(--title-page-color);
 }
 
+/*додаэмо svg */
+.overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+    to right,    
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/header-img-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
