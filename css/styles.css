@@ -436,4 +436,46 @@ address {
     background-size: cover;
 }
 
+.mail {
+    display: inline-flex;
+}
+
+.mail::before {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    content: "";
+    background-image: url(../images/envelope.png);
+    background-size: contain;
+    align-items: center;
+}
+
+.bgimage::before {
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    content: "";
+    background-color: var(--bg-color-blu);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+
+}
+
+.image-1::before {
+background-image: url(../images/antenna-1.svg);
+}
+
+.image-2::before {
+    background-image: url(../images/clock-1.svg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.image-3::before {
+    background-image: url(../images/diagram-1.svg);
+}
+
+.image-4::before {
+    background-image: url(../images/astronaut.svg);
+}
 
