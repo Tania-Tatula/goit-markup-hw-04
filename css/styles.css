@@ -133,6 +133,14 @@ p {
     display: inline-flex;
 }
  
+.social-network:hover,
+.social-network:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+.social-network:not(:last-child) {
+    margin-right: 10px;
+}
  /* стилі для лого*/
  .logo {
     font-family: "Raleway", sans-serif;
@@ -168,12 +176,43 @@ p {
     color: var(--title-text-color);
 }
 
+
+.mail,
+.tel {
+    display: inline-flex;
+    
+}
+
+.mail::before {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    content: "";
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/envelope.svg);
+}
+
+
+.tel::before {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    content: "";
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/smartphone.svg);
+}
+
 .current {
     color: var(--accent-color);
 }
 
 .contacts {
     color: var(--primari-text-color);
+
 }
 
 /* стилі для всіх заголовків  */
@@ -233,6 +272,11 @@ p {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 20px;
+
 }
 
 /* стилі для тексту */
@@ -246,6 +290,9 @@ p {
 .paragraf-ptf {
     font-size: 16px;
     line-height: 1.87;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 20px;
 }
 
 .footer-text {
@@ -387,9 +434,25 @@ address {
     margin-bottom: 0;
   }
 
+.prt-box {
+    border: 1px solid rgba(238,238,238,1);
+}
+
+.prt-box:hover,
+.prt-box:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 
-
+.command{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
 /* приховує елементи */
 .visually-hidden {
@@ -442,19 +505,6 @@ address {
     background-size: cover;
 }
 
-.mail {
-    display: inline-flex;
-}
-
-.mail::before {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    content: "";
-    background-image: url(../images/envelope.png);
-    background-size: contain;
-    align-items: center;
-}
 
 .bgimage::before {
     display: block;
@@ -512,11 +562,20 @@ background-image: url(../images/antenna-1.svg);
     background-image: url(../images/linkedin.svg);
 }
 
-.social-network:hover,
-.social-network:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
+
+.command-social-bloc {
+    display: block;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    margin-top: 16px;
 }
-.social-network:not(:last-child) {
-    margin-right: 10px;
+
+.command-social-bloc {
+    display: flex;
+}
+
+.command-social-network {
+    width: 20px;
+    height: 20px;
 }
