@@ -129,24 +129,12 @@ p {
     color: var(--title-page-color);
 }
 
-.social-network {
-    display: inline-flex;
-}
- 
-.social-network:hover,
-.social-network:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}
-.social-network:not(:last-child) {
-    margin-right: 10px;
-}
  /* стилі для лого*/
  .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,192;
+    line-height: 1.192;
     letter-spacing: 0.03em;
 }
 .logo-color {
@@ -246,6 +234,7 @@ p {
     color: var(--title-text-color);
 
     margin-bottom: 10px;
+    
 }
 
 .social-network-title {
@@ -395,9 +384,9 @@ address {
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-  
-    
+     
 }
+
 .content-box {
     flex-basis: 270px;
     margin-right: 30px;
@@ -429,35 +418,25 @@ address {
     margin-right: 30px;
 }
 
-.client {
-    height: 49.22px;
-    width: 44.26px;
-    position: center;
+.flexsvg-linc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 170px;
+    background-color: inherit;
 }
 
-.client-2 {
-    width: 40px;
-    height: 52px;
+
+.client-svg {
+    fill: #AFB1B8;
 }
 
-.client-3 {
-    width: 41px;
-    height: 42.6px;
-}
-.client-4 {
-    height: 42.02px;
-    width: 79.65px;
+.flexsvg-linc:hover .client-svg,
+.flexsvg-linc:focus .client-svg {
+   fill: var(--accent-color);
 }
 
-.client-5 {
-    width: 59px;
-    height: 47px;
-}
-
-.client-6 {
-    width: 88.48px;
-    height: 45.44px;
-}
 
 /* стилы для блокыв з картинками */
 
@@ -551,6 +530,7 @@ address {
 .bgimage::before {
     display: block;
     height: 120px;
+    width: 270px;
     margin-bottom: 30px;
     content: "";
     background-color: var(--bg-color-blu);
@@ -577,39 +557,10 @@ background-image: url(../images/antenna-1.svg);
     background-image: url(../images/astronaut.svg);
 }
 
-.social-network::before {
-    content: "";
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-}
 
-.instagram::before {
-    background-image: url(../images/instagram.svg);
-}
-
-.twitter::before {
-    background-image: url(../images/twitter.svg);
-}
-
-.facebook::before {
-   background-image: url(../images/facebook.svg);
-}
-
-.linkedin::before {
-    background-image: url(../images/linkedin.svg);
-}
-
-
-.
-}
 
 /* соціфльнф мережі оформлення */
-.command-social-bloc {
+.social-icons {
     display: flex;
     margin-left: 32px;
     margin-right: 32px;
@@ -617,17 +568,66 @@ background-image: url(../images/antenna-1.svg);
     margin-top: 16px;
 }
 
-.command-social-network {
+
+
+.social-icons-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icons-linc {
     display: flex;
-    width: 40px;
-    height: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background-color: inherit;
     border-radius: 50%;
 }
 
-.social-network-icon {
+.social-icon-svg {
+     width: 20px;
+     height: 20px;
+     fill: #AFB1B8;
+}
+
+.social-icons-linc:hover .social-icon-svg,
+.social-icons-linc:focus .social-icon-svg {
+   fill: var(--title-page-color);
+}
+
+.social-icons-linc:hover,
+.social-icons-linc:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-bloc {
+    min-width: 206px;
+    margin-left: 70px;
+}
+
+.bloc {
     display: flex;
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    position: absolute;
+    justify-content:start;
+}
+
+.addres-bloc{
+    min-width: 231px;
+    margin-left: 200px;
+    
+}
+
+.footer-social {
+    width: 170px;
+    height: 90px;
+     
+}
+
+.footer-svg-linc {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-svg-icon {
+     width: 20px;
+     height: 20px;
+     fill: var(--title-page-color);
 }
