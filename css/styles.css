@@ -165,34 +165,24 @@ p {
 }
 
 
-.mail,
-.tel {
-    display: inline-flex;
-    
-}
-
-.mail::before {
-    width: 16px;
-    height: 12px;
+.header-svg-icon {
+    fill: var(--primari-text-color);
     margin-right: 10px;
-    content: "";
-    background-size: contain;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-image: url(../images/envelope.svg);
 }
 
 
-.tel::before {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    content: "";
-    background-size: contain;
+.header-svg-linc {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
-    background-image: url(../images/smartphone.svg);
+    flex-direction: row-reverse;
 }
+
+.header-svg-linc:hover .header-svg-icon,
+.header-svg-linc:focus .header-svg-icon {
+    fill: var(--accent-color);
+}
+
 
 .current {
     color: var(--accent-color);
